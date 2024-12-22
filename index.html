@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Bever's Blog Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .hero {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .blog-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">John Bever</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to My Blog Portfolio</h1>
+        <p>Exploring Machine Learning, Mathematics, and Beyond</p>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm John Bever, a data scientist and aspiring machine learning engineer with a passion for mathematics and computational sciences.
+            This blog is a collection of my learning journey, insights from books, articles, and hands-on projects in ML and math.
+        </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container py-5">
+        <h2>Portfolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1: Neural Network from Scratch</h5>
+                        <p class="card-text">Built a neural network to classify images, documenting each step for clarity.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2: Customer Retention Prediction</h5>
+                        <p class="card-text">Developed a pipeline using Apache Spark to predict customer churn.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3: Math Blog Series</h5>
+                        <p class="card-text">Explored advanced topics in linear algebra and optimization in blog posts.</p>
+                        <a href="#" class="btn btn-primary">View Posts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="container py-5">
+        <h2>Blog</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card blog-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Review: Deep Learning by Goodfellow</h5>
+                        <p class="card-text">Insights and applications from one of the most comprehensive ML books.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card blog-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Article: Eigenvalues in Optimization</h5>
+                        <p class="card-text">How eigenvalues play a key role in convex optimization problems.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations or discussions!</p>
+        <p>Email: <a href="mailto:john@example.com">john@example.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 John Bever. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
