@@ -42,6 +42,38 @@
             transform: scale(1.05); /* Slightly enlarge the image on hover */
             box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Adds a subtle glow effect */
         }
+        #about {
+            margin-top: 50px; /* Adds spacing above the section */
+            border: 1px solid #ddd; /* Optional: Adds a border around the section */
+            background-color: #f9f9f9; /* Optional: Light gray background for distinction */
+            border-radius: 8px; /* Optional: Rounds the corners */
+            padding: 20px; /* Adds inner spacing */
+        }
+        #about .row {
+            display: flex;
+            align-items: center; /* Aligns the image and text vertically */
+        }
+        #about .col-md-8 {
+            text-align: left; /* Left-aligns the text */
+            padding: 20px; /* Adds spacing inside the text column */
+        }
+        #about img.square-img {
+            border: 3px solid white; /* Adds a white border around the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+        }
+        #about img.square-img:hover {
+            transform: scale(1.05); /* Slightly enlarges the image on hover */
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Adds a blue glow effect on hover */
+        }
+        #about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        #about p {
+            line-height: 1.6; /* Improves readability */
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -72,20 +104,28 @@
     </div>
 
     <!-- About Section -->
-    <section id="about" class="container py-5 text-center">
-    <h2>About Me</h2>
-    <p>
-        I’m John Bever, and my learning journey is driven by a passion for connecting depth and practicality. 
-        I thrive on diving deep into subjects like mathematics, machine learning, and philosophy, while always 
-        finding ways to apply them to real-world problems. Whether I’m building machine learning models or exploring 
-        philosophical concepts, I aim to bridge abstract ideas with meaningful, tangible outcomes.
-    </p>
-    <p>
-        My portfolio is a personal endeavor for growth—a space for reflection and self-discovery. It allows me to 
-        document my ideas for future reference and demonstrate to myself what I’m capable of achieving. Thank you 
-        for visiting—I hope my journey inspires curiosity and sparks meaningful connections.
-    </p>
-    <img src="images/lucy_and_john.jpg" alt="My Sweet Girl Lucy!" class="square-img mt-3" style="width: 200px; height: 200px; object-fit: cover;">
+    <section id="about" class="container py-5">
+    <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-md-4 col-12 text-center">
+            <img src="images/me-and-lucy.jpg" alt="John Bever and Lucy" class="square-img" style="width: 200px; height: 200px; object-fit: cover;">
+        </div>
+        <!-- Text Column -->
+        <div class="col-md-8 col-12">
+            <h2>About Me</h2>
+            <p>
+                I’m John Bever, and my learning journey is driven by a passion for connecting depth and practicality. 
+                I thrive on diving deep into subjects like mathematics, machine learning, and philosophy, while always 
+                finding ways to apply them to real-world problems. Whether I’m building machine learning models or exploring 
+                philosophical concepts, I aim to bridge abstract ideas with meaningful, tangible outcomes.
+            </p>
+            <p>
+                My portfolio is a personal endeavor for growth—a space for reflection, documenting my ideas for future reference, 
+                and demonstrating to myself what I’m capable of achieving. Thank you for visiting—I hope my journey inspires 
+                curiosity and sparks meaningful connections.
+            </p>
+        </div>
+    </div>
     </section>
 
     <!-- Portfolio Section -->
