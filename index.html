@@ -33,6 +33,15 @@
             text-align: center;
             padding: 10px;
         }
+        .square-img {
+        border: 3px solid white; /* Adds a border for a clean look */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+        }
+        .square-img:hover {
+            transform: scale(1.05); /* Slightly enlarge the image on hover */
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Adds a subtle glow effect */
+        }
     </style>
 </head>
 <body>
@@ -58,18 +67,27 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <h1>Welcome to My Blog Portfolio</h1>
+        <h1>Welcome to My Learning Journey</h1>
         <p>Exploring Machine Learning, Mathematics, and Beyond</p>
     </div>
 
     <!-- About Section -->
-    <section id="about" class="container py-5">
-        <h2>About Me</h2>
-        <p>
-            Hi! I'm John Bever, a data scientist and aspiring machine learning engineer with a passion for mathematics and computational sciences.
-            This blog is a collection of my learning journey, insights from books, articles, and hands-on projects in ML and math.
-        </p>
+    <section id="about" class="container py-5 text-center">
+    <h2>About Me</h2>
+    <p>
+        I’m John Bever, and my learning journey is driven by a passion for connecting depth and practicality. 
+        I thrive on diving deep into subjects like mathematics, machine learning, and philosophy, while always 
+        finding ways to apply them to real-world problems. Whether I’m building machine learning models or exploring 
+        philosophical concepts, I aim to bridge abstract ideas with meaningful, tangible outcomes.
+    </p>
+    <p>
+        My portfolio is a personal endeavor for growth—a space for reflection and self-discovery. It allows me to 
+        document my ideas for future reference and demonstrate to myself what I’m capable of achieving. Thank you 
+        for visiting—I hope my journey inspires curiosity and sparks meaningful connections.
+    </p>
+    <img src="images/me-and-lucy.jpg" alt="John Bever and Lucy" class="square-img mt-3" style="width: 200px; height: 200px; object-fit: cover;">
     </section>
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="container py-5">
